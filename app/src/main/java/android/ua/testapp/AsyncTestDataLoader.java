@@ -8,7 +8,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 /**
- * Created by Admin on 09.11.2015.
+ * Created by gkiryaziev on 09.11.2015.
  */
 public class AsyncTestDataLoader extends AsyncTask<String, Void, String> {
 

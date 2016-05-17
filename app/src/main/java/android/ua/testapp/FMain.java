@@ -61,7 +61,7 @@ public class FMain extends Activity implements OnClickListener {
                 break;
             case R.id.btnLoadData:
                 try {
-                    String result = new AsyncTestDataLoader().execute("http://rsrv-devmaster.rhcloud.com/test").get();
+                    String result = new AsyncTestDataLoader().execute("http://some-address-return-timestamp/test").get();
                     txtResult.setText(DateParser.unixToFormatedString("dd.MM.yyyy HH:mm:ss", Long.parseLong(result)));
                     dbHelper.addRecord(new Record(result));
                     fillListView();
